@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Sound Festival - Dúvidas</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Spring Sound</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="lineup.html">Line-up</a></li>
+                <li><a href="ingressos.html">Ingressos</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="faq.html">Dúvidas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-faq">
+        <section class="faq-banner">
+            <span class="batch-badge">SUPORTE & AJUDA</span>
+            <h2>PERGUNTAS FREQUENTES</h2>
+            <p>Tire todas as suas dúvidas sobre ingressos, acesso e regras do evento</p>
+        </section>
+
+        <section class="faq-container">
+            <div class="faq-category">
+                <h3>🎟️ Ingressos e Pagamento</h3>
+                
+                <details class="faq-item">
+                    <summary>Como comprovo meu direito à meia-entrada?</summary>
+                    <p>A comprovação é feita na entrada do evento mediante apresentação da Carteira de Identificação Estudantil (CIE) válida, ID Jovem, ou documento oficial com foto que comprove o benefício (para PCDs e professores da rede pública).</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Como funciona o Ingresso Social?</summary>
+                    <p>O Ingresso Social dá desconto mediante a doação de 1kg de alimento não perecível na entrada do festival. Os alimentos serão arrecadados na catraca e destinados a ONGs parceiras.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Posso transferir meu ingresso para outra pessoa?</summary>
+                    <p>Sim! A transferência de titularidade pode ser feita diretamente pelo aplicativo do festival até 48 horas antes da abertura dos portões do dia correspondente.</p>
+                </details>
+            </div>
+
+            <div class="faq-category">
+                <h3>🚪 Entrada e Classificação</h3>
+
+                <details class="faq-item">
+                    <summary>Qual a classificação etária do festival?</summary>
+                    <p>A classificação oficial é de 16 anos. Menores de 16 anos só podem entrar acompanhados de pai, mãe ou responsável legal, portando autorização por escrito e registrada.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Qual o horário de abertura dos portões?</summary>
+                    <p>Os portões do Parque Villa-Lobos abrem às 12h00 em todos os 3 dias de festival. Os shows encerram pontualmente às 23h00.</p>
+                </details>
+            </div>
+
+            <div class="faq-category">
+                <h3>💳 Pagamentos no Evento</h3>
+
+                <details class="faq-item">
+                    <summary>O evento é Cashless?</summary>
+                    <p>Sim. O Spring Sound é 100% Cashless. Suas compras dentro do festival serão feitas via pulseira RFID. Você poderá carregá-la previamente pelo site ou nos caixas espalhados pelo parque.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>O que acontece se eu não usar todo o saldo da minha pulseira?</summary>
+                    <p>O reembolso do saldo restante pode ser solicitado diretamente no site oficial em até 10 dias úteis após o término do evento.</p>
+                </details>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="info-header-block">
+                <h3>✉️ AINDA TEM DÚVIDAS? FALE CONOSCO</h3>
+                <p>Preencha o formulário abaixo e nossa equipe responderá em breve.</p>
+            </div>
+
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto">
+                        <option>Dúvidas sobre Ingressos</option>
+                        <option>Acessibilidade / PCD</option>
+                        <option>Imprensa e Parcerias</option>
+                        <option>Outros Assuntos</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" rows="4" placeholder="Escreva sua dúvida aqui..." required></textarea>
+                </div>
+                <button type="submit" class="hero-btn">ENVIAR MENSAGEM</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Spring Sound Festival. Desenvolvido por [Nome 1] e [Nome 2].</p>
+    </footer>
+
+</body>
+</html>

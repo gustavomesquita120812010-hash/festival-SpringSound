@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Sound Festival - Início</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Spring Sound</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="lineup.html">Line-up</a></li>
+                <li><a href="ingressos.html">Ingressos</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="faq.html">Dúvidas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-home">
+        <section class="hero-eventer">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-subtitle">Prepare-se! A energia do pôr do sol te espera.</span>
+                <h2 class="hero-title">SPRING SOUND FESTIVAL</h2>
+                <h3 class="hero-tagline">VIBE ANIMADA E CORES QUENTES</h3>
+                <p class="hero-info">28 a 30 de Setembro 2026 | Parque Villa-Lobos | São Paulo, SP</p>
+                
+                <a href="lineup.html" class="hero-btn">VER LINE-UP COMPLETO</a>
+
+                <div class="countdown-container">
+                    <div class="countdown-box">
+                        <span id="days" class="countdown-number">00</span>
+                        <span class="countdown-label">Dias</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="hours" class="countdown-number">00</span>
+                        <span class="countdown-label">Horas</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="minutes" class="countdown-number">00</span>
+                        <span class="countdown-label">Minutos</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="seconds" class="countdown-number">00</span>
+                        <span class="countdown-label">Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-episodes">
+            <div class="section-header">
+                <h3>ATRAÇÕES PRINCIPAIS</h3>
+                <a href="lineup.html" class="view-all">VER TODOS OS ARTISTAS &rarr;</a>
+            </div>
+
+            <div class="cards-grid">
+                <div class="artist-card">
+                    <div class="card-image-wrapper">
+                        <span class="card-tag">DIA 28</span>
+                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=400" alt="Cantora">
+                    </div>
+                    <div class="card-info">
+                        <h4>DUDA BEAT</h4>
+                        <p>Pop brasileiro com sintetizadores e muita energia para abrir o festival.</p>
+                    </div>
+                </div>
+
+                <div class="artist-card">
+                    <div class="card-image-wrapper">
+                        <span class="card-tag">DIA 28</span>
+                        <img src="https://images.unsplash.com/photo-1549834125-82d3c48159a3?auto=format&fit=crop&q=80&w=400" alt="Cantor">
+                    </div>
+                    <div class="card-info">
+                        <h4>SILVA</h4>
+                        <p>Voz suave e arranjos solares perfeitos para o momento do pôr do sol.</p>
+                    </div>
+                </div>
+
+                <div class="artist-card">
+                    <div class="card-image-wrapper">
+                        <span class="card-tag">DIA 29</span>
+                        <img src="https://images.unsplash.com/photo-1520635360276-79f3dbd809f6?auto=format&fit=crop&q=80&w=400" alt="Banda">
+                    </div>
+                    <div class="card-info">
+                        <h4>GILSONS</h4>
+                        <p>Mistura de ritmos baianos e MPB que vai fazer todo mundo dançar junto.</p>
+                    </div>
+                </div>
+
+                <div class="artist-card">
+                    <div class="card-image-wrapper">
+                        <span class="card-tag">DIA 30</span>
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600" alt="Cantora">
+                    </div>
+                    <div class="card-info">
+                        <h4>IZA</h4>
+                        <p>Potência vocal, R&B e presença de palco marcante para encerrar a noite.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Spring Sound Festival. Desenvolvido por Gustavo Mesquita, Gabriel Nazarre e Raul Nogueira.</p>
+    </footer>
+
+    <script>
+        const targetDate = new Date("September 28, 2026 14:00:00").getTime();
+
+        const timerInterval = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+
+            if (distance < 0) {
+                clearInterval(timerInterval);
+                document.getElementById("days").innerHTML = "00";
+                document.getElementById("hours").innerHTML = "00";
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
