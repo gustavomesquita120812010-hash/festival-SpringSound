@@ -1,7 +1,7 @@
 # 🌸 Spring Sound Festival 2026
 
 **Integrantes:** Gustavo Mesquita, Gabriel Nazarre, Raul Nogueira. 
-**Link do site na Vercel:** 
+**Link do site na Vercel:** https://festival-spring-sound.vercel.app
 
 ---
 
@@ -33,19 +33,14 @@ Jovens e adultos entre 18 e 35 anos, amantes de música alternativa, indie, pop 
 
 ---
 
-## 🖼️ Comparativo Visual (Evolução com IA)
-
-* **Primeira Versão (Antes):** `img/antes.png`
-* **Versão Final (Depois):** `img/depois.png`
-
 ---
 
 ## 🤖 Prompts Utilizados
 
-1. *"Crie a estrutura do header e nav usando flexbox com uma paleta de cores acolhedora e estilo de festival de primavera."*
-2. *"Ajuste o layout do line-up para usar cards alternados em linha (flex-direction row e row-reverse) com badge de palco."*
-3. *"Crie uma tabela de preços de ingressos com destaque no card central (Passaporte) e suporte a parcelamento e badges de lote."*
-4. *"Resuma e otimize o CSS global consolidando variáveis, tirando seletores duplicados e unificando as media queries no final."*
+1. **foi basicamente o primeiro prompt que foi para dar o contexto de todo nosso site, como queriamos e como iria funcionar**
+2. **Depois decidimos as cores com um prompt e referencias visuais**
+3. **Por ultimo um prompt que diria como ele deveria fazer cada parte, que basicamente ia ser em resumo 'Vou sempre te mandar um referencia visual, e dizer qual é o nome da parte que deve gerar o codigo, sempre gere o codigo de forma simples e direta.'**
+4. **Por ultimo foi que se o site estava dentro dos criterios da atividade e sim estava 99% faltava só o link da vercel e complementar o README.md**
 
 ---
 
